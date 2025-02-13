@@ -5,10 +5,10 @@ int main(){
     scanf("%d",&num2);
 
     if(num1>num2){
-        printf(num1);
+        printf("%d",num1);
 
     }
     else{
-        printf(num1);
+        printf("%d",num2);
     }
 }
