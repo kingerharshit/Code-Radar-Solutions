@@ -1,18 +1,19 @@
-#include<stdio.h>
-int main(){
-    char ch;
-    scanf("%c",&ch);
+#include <stdio.h>
+#include <ctype.h> // For tolower function
 
-    if(tolower(ch)=='a' || tolower(ch)=='e' || tolower(ch)=='i' || tolower(ch)=='o' || tolower(ch)=='u'){
+int main() {
+    char ch;
+    scanf("%c", &ch);
+    
+    if (tolower(ch) == 'a' || tolower(ch) == 'e' || tolower(ch) == 'i' || tolower(ch) == 'o' || tolower(ch) == 'u') {
         printf("Vowel");
-    }
-    else if((ch>='a' && ch<='z') || (ch>='A' && ch<='Z')){
-        printf("Consonent");
-    }
-    else if((ch>='0' && ch<='9')){
+    } else if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) {
+        printf("Consonant");
+    } else if (ch >= '0' && ch <= '9') {
         printf("Digit");
-    }
-    else{
+    } else {
         printf("Special Character");
     }
-    }
+    
+    return 0;
+}
