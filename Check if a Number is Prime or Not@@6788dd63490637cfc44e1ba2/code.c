@@ -1,27 +1,23 @@
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-    int num, i, isPrime = 1;
+    int num, i, flag = 0;
     
     // Input the number
     scanf("%d", &num);
     
-    // Check if the number is greater than 1
-    if (num <= 1) {
-        isPrime = 0;
-    } else {
-        // Check divisibility from 2 to sqrt(num)
-        for (i = 2; i <= sqrt(num); i++) {
-            if (num % i == 0) {
-                isPrime = 0;
-                break;
-            }
+    // Check if the number is prime
+    for (i = 2; i <= num / 2; i++) {
+        if (num % i == 0) {
+            flag = 1;
+            break;
         }
     }
     
     // Output the result
-    if (isPrime) {
+    if (num <= 1) {
+        printf("Not Prime");
+    } else if (flag == 0) {
         printf("Prime");
     } else {
         printf("Not Prime");
