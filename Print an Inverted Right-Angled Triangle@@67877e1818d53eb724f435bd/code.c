@@ -9,7 +9,7 @@ int main() {
     for (int i = N; i >= 1; i--) {
         // Print stars for the current row
         for (int j = 1; j <= i; j++) {
-            printf(" *");
+            printf(" * ");
         }
         // Move to the next line after printing stars for the current row
         printf("\n");
