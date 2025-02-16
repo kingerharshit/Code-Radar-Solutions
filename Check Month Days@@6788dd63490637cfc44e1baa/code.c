@@ -1,27 +1,35 @@
-#include<stdio.h>
-int main(){
-    int month;
-    scanf("%d",month);
+#include <stdio.h>
 
-    switch(month){
-        case 1:
-        case 3:
-        case 5:
-        case 7:
-        case 8:
-        case 10:
-        case 12:
-        printf("31\n")
-        break;
+int main() {
+    int month;
+
+    // Reading the month number from input
+    scanf("%d", &month);
+
+    // Determining the number of days in the month
+    switch (month) {
+        case 1: // January
+        case 3: // March
+        case 5: // May
+        case 7: // July
+        case 8: // August
+        case 10: // October
+        case 12: // December
+            printf("31\n");
+            break;
         case 4: // April
         case 6: // June
         case 9: // September
         case 11: // November
             printf("30\n");
             break;
-        case 2:
-        printf("28\n");
-        break;
-
+        case 2: // February
+            printf("28\n");
+            break;
+        default:
+            printf("Invalid month\n");
+            break;
     }
+
+    return 0;
 }
