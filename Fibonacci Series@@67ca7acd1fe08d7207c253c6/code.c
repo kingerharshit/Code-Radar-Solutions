@@ -18,4 +18,4 @@ void fibonacciseries(int n) {
     }
 }
 
-fibonacciseries
+fibonacciseries(n);
