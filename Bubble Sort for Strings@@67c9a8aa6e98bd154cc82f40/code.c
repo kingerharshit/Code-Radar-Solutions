@@ -1,4 +1,4 @@
-#include <string.h>  // Required for strcmp() and strcpy()
+#include <string.h> // Required for strcmp() and strcpy()
 
 // Function to perform bubble sort on an array of strings
 void bubblesort(char arr[][100], int n) {
