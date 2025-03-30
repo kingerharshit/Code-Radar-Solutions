@@ -18,20 +18,3 @@ void fibonacciseries(int n) {
     }
 }
 
-int main() {
-    int n;
-
-    // Read the number of terms
-    scanf("%d", &n);
-
-    // Validate input
-    if (n <= 0) {
-        printf("Invalid input\n");
-        return 0;
-    }
-
-    // Call the fibonacciseries function
-    fibonacciseries(n);
-
-    return 0;
-}
