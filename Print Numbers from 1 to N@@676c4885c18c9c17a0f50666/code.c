@@ -4,10 +4,15 @@ int main() {
     int N, i;
     scanf("%d", &N);
     
-    for(i = 1; i <= N; i++) {
-        printf("%d", i);
-        if(i < N) printf(" ");
-    }
-    
-    return 0;
-}
+    if (N >= 1) {
+        printf("1");
+        for (i = 2; i <= N; i++) {
+            printf(" %d", i);
+        }
+    } else if (N <= -1) {
+        printf("-1");
+        for (i = -2; i >= N; i--) {
+            printf(" %d", i);
+        }
+    } else { // N == 0
+        printf("0
