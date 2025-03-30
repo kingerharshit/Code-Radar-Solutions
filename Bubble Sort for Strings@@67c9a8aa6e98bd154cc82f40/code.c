@@ -1,21 +1,18 @@
-// Bubble sort function to sort strings lexicographically
-void bubblesort(char arr[][100], int n) {
+void bubbleSort(int arr[], int n) {
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
-            if (strcmp(arr[j], arr[j + 1]) > 0) {
-                // Swap strings
-                char temp[100];
-                strcpy(temp, arr[j]);
-                strcpy(arr[j], arr[j + 1]);
-                strcpy(arr[j + 1], temp);
-            }
+            if (arr[j] > arr[j + 1]) {
+            int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+
+              }
         }
     }
 }
-
-// Function to print the sorted array
-void printArray(char arr[][100], int n) {
+void printArray(int arr[], int n) {
     for (int i = 0; i < n; i++) {
-        printf("%s\n", arr[i]);
+        printf("%d ", arr[i]);
     }
+    printf("\n");
 }
