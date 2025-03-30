@@ -1,21 +1,10 @@
-#include <stdio.h>
+fibonacciSeries(n);
 
-// Function to generate and print Fibonacci series up to N terms
-void fibonacciseries(int n) {
-    if (n >= 1) {
-        printf("0");
-    }
-    if (n >= 2) {
-        printf(" 1");
+if(n==1){
+        return 0;
     }
     
-    int a = 0, b = 1, c;
-    for (int i = 3; i <= n; i++) {
-        c = a + b;
-        printf(" %d", c);
-        a = b;
-        b = c;
-    }
-}
-
-fibonacciseries(n);
+    int fibNm1 = fib(n-1);
+    int fibNm2 = fib(n-2);
+    int fibN= fibNm1 + fibNm2;
+    
