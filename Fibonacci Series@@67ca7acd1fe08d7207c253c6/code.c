@@ -1,16 +1,16 @@
 #include <stdio.h>
 
-void fibonacciseries(int n) {
-    if (n <= 0) {
+void fibonacciseries() {
+    if (int n <= 0) {
         printf("Invalid input\n");
         return;
     }
 
     int a = 0, b = 1, c;
-    if (n >= 1) {
+    if (int n >= 1) {
         printf("0");
     }
-    if (n >= 2) {
+    if (int n >= 2) {
         printf(" 1");
     }
     for (int i = 3; i <= n; i++) {
