@@ -15,4 +15,4 @@ int main() {
             printf(" %d", i);
         }
     } else { // N == 0
-        printf("0
+        printf("0)
